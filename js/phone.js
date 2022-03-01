@@ -75,6 +75,16 @@ const displyPhoneDetails = phones => {
                 <p class="card-text ">Display Size - ${phones.mainFeatures.displaySize}</p>
                 <p class="card-text ">Chip Set - ${phones.mainFeatures.chipSet}</p>
                 <p class="card-text ">Memory - ${phones.mainFeatures.memory}</p>
+                <p><u><strong>Sensors</strong></u></p>
+                <p class="card-text ">${phones.mainFeatures.sensors[0]},${phones.mainFeatures.sensors[1]},${phones.mainFeatures.sensors[2]},${phones.mainFeatures.sensors[3]},${phones.mainFeatures.sensors[4]},${phones.mainFeatures.sensors[5]},${phones.mainFeatures.sensors[6]}</p>
+                <p><u><strong>Othres</strong></u></p>
+                <p class="card-text ">Bluetooth - ${phones.others.Bluetooth}</p>
+                <p class="card-text ">GPS - ${phones.others.GPS}</p>
+                <p class="card-text ">NFC - ${phones.others.NFC}</p>
+                <p class="card-text ">Radio - ${phones.others.Radio}</p>
+                <p class="card-text ">USB - ${phones.others.USB}</p>
+                <p class="card-text ">WLAN - ${phones.others.WLAN}</p>
+               
                 <a href="#" class="btn btn-primary ">Buy Now</a>
             </div>
     
