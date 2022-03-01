@@ -70,7 +70,7 @@ const displyPhoneDetails = phones => {
             <img class="card-img-top w-25 mx-auto" src="${phones.image}" alt="Card image cap">
             <div class="card-body text-center">
                     <h5 class="card-title text-center">${phones.releaseDate}</h5>
-                
+                <p><u><strong>Main Features</strong></u></p>
                 <p class="card-text ">Storage - ${phones.mainFeatures.storage}</p>
                 <p class="card-text ">Display Size - ${phones.mainFeatures.displaySize}</p>
                 <p class="card-text ">Chip Set - ${phones.mainFeatures.chipSet}</p>
