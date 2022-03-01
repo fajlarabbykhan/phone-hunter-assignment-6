@@ -28,7 +28,7 @@ const displayPhoneSearchResult = phones => {
     phoneSearchResult.textContent = ""
 
     for (const phone of phones) {
-        console.log(phone)
+        // console.log(phone)
         const div = document.createElement('div')
         div.classList.add('col')
         // console.log(phone.slug)
