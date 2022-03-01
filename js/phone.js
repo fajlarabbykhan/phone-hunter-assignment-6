@@ -51,13 +51,19 @@ const displyPhoneDetails = phones => {
     const phoneDetails = document.getElementById('phone-display-details')
     const div = document.createElement('div')
     div.classList.add('card')
+    // const date = phones.releaseDate
+    // console.log(date)
+
     div.innerHTML = `
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <img class="card-img-top w-25 mx-auto" src="${phones.image}" alt="Card image cap">
+            <div class="card-body text-center">
+                    <h5 class="card-title text-center">${phones.releaseDate}</h5>
+                
+                <p class="card-text ">Storage - ${phones.mainFeatures.storage}</p>
+                <p class="card-text ">Display Size - ${phones.mainFeatures.displaySize}</p>
+                <p class="card-text ">Chip Set - ${phones.mainFeatures.chipSet}</p>
+                <p class="card-text ">Memory - ${phones.mainFeatures.memory}</p>
+                <a href="#" class="btn btn-primary ">Buy Now</a>
             </div>
     
     
