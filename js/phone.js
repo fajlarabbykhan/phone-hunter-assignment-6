@@ -70,10 +70,12 @@ const displyPhoneDetails = phones => {
     div.classList.add('card')
     // const date = phones.releaseDate
     // console.log(date)
+    console.log(phones)
 
     div.innerHTML = `
             <img class="card-img-top w-25 mx-auto" src="${phones.image}" alt="Card image cap">
             <div class="card-body text-center">
+            <h5 class="card-title text-center">${phones.brand} - ${phones.name}</h5>
                     <h5 class="card-title text-center">${phones.releaseDate}</h5>
                 <p><u><strong>Main Features</strong></u></p>
                 <p class="card-text ">Storage - ${phones.mainFeatures.storage}</p>
