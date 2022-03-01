@@ -4,7 +4,10 @@ const searchPhone = () => {
     const searchText = searchField.value
     // console.log(searchText)
 
+    //clearing data.....
     searchField.value = ""
+
+    //Loading data.....
     const url = ` https://openapi.programming-hero.com/api/phones?search=${searchText}`
     fetch(url)
         .then(res => res.json())
@@ -14,6 +17,11 @@ const searchPhone = () => {
 const displayPhoneSearchResult = phones => {
     // console.log(phones)
     const phoneSearchResult = document.getElementById('phone-search-result')
+
+    //clearing data.....
+    // phoneSearchResult.innerHTML = ""
+    phoneSearchResult.textContent = ""
+
     for (const phone of phones) {
         console.log(phone)
         const div = document.createElement('div')
@@ -49,6 +57,9 @@ const loadPhoneDetails = id => {
 const displyPhoneDetails = phones => {
     console.log(phones)
     const phoneDetails = document.getElementById('phone-display-details')
+
+    //clearing data.....
+    phoneDetails.textContent = ""
     const div = document.createElement('div')
     div.classList.add('card')
     // const date = phones.releaseDate
