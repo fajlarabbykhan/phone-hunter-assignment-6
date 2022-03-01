@@ -60,6 +60,7 @@ const displyPhoneDetails = phones => {
 
     //clearing data.....
     phoneDetails.textContent = ""
+
     const div = document.createElement('div')
     div.classList.add('card')
     // const date = phones.releaseDate
