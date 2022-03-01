@@ -6,12 +6,17 @@ const searchPhone = () => {
 
     //clearing data.....
     searchField.value = ""
+    if (searchText == "") {
+        alert("No search text found.Please type in search box.")
+    }
+    else {
+        //Loading data.....
+        const url = ` https://openapi.programming-hero.com/api/phones?search=${searchText}`
+        fetch(url)
+            .then(res => res.json())
+            .then(data => displayPhoneSearchResult(data.data))
+    }
 
-    //Loading data.....
-    const url = ` https://openapi.programming-hero.com/api/phones?search=${searchText}`
-    fetch(url)
-        .then(res => res.json())
-        .then(data => displayPhoneSearchResult(data.data))
 }
 
 const displayPhoneSearchResult = phones => {
